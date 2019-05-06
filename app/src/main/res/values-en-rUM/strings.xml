@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SteamStalk</string>
+
+    <string name="games" translatable="false">Games</string>
+    <string name="recently_played" translatable="false">Recently Played</string>
+    <string name="developer" translatable="false">Developer:</string>
+    <string name="publisher" translatable="false">Publisher:</string>
+    <string name="genre" translatable="false">Genre:</string>
+    <string name="price" translatable="false">Price:</string>
+    <string name="history" translatable="false">History</string>
+    <string name="favourites" translatable="false">Favourites</string>
+    <string name="user" translatable="false">USER</string>
+    <string name="game" translatable="false">GAME</string>
+    <string-array	name="pref_language_options">
+        <item>EN</item>
+        <item>TR</item>
+    </string-array>
+    <string-array 	name="pref_language_values">
+        <item>en</item>
+        <item>tr</item>
+    </string-array>
+</resources>

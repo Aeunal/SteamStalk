@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SteamStalk</string>
+    <string name="games" translatable="false">Oyunlar</string>
+    <string name="recently_played" translatable="false">En Son Oynadıkları</string>
+    <string name="developer" translatable="false">"Geliştirici: "</string>
+    <string name="publisher" translatable="false">"Yayıncı: "</string>
+    <string name="genre" translatable="false">Türler:</string>
+    <string name="price" translatable="false">"Fiyat: "</string>
+    <string name="history" translatable="false">Geçmiş</string>
+    <string name="favourites" translatable="false">Favoriler</string>
+    <string name="user" translatable="false">Kişi</string>
+    <string name="game" translatable="false">Oyun</string>
+    <string name="pref_title_social_recommendations">Oyun Önerilerini Aktive Et</string>
+    <string name="pref_title_display_name">Profil Değiştir</string>
+    <string name="pref_title_add_friends_to_messages">Arkadaşların Açıkken Bildirim Gönder</string>
+    <string name="tooltip">Steam ID Girin</string>
+    <string name="sync_language_setting">Senkronizasyon ve Dil</string>
+    <string name="language_setting">Dil</string>
+    <string name="pref_title_free_show">Kullanıcı profilinde ücretsiz oyunları göster</string>
+    <string name="pref_description_social_recommendations">Oyunlarına uygun öneriler
+         <string name="pref_title_owned_game_count">Son oynanılan oyun sayısı</string>
+    </string>
+    <string name="pref_title_news_count">Kaç tane haber gösterilsin</string>
+    <string name="pref_header_general">Profil</string>
+    <string-array	name="pref_language_options">
+        <item>EN</item>
+        <item>TR</item>
+    </string-array>
+    <string-array name="pref_language_values">
+        <item>en</item>
+        <item>tr</item>
+    </string-array>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>Only Wi-Fi</item>
+        <item>Never</item>
+    </string-array>
+
+</resources>

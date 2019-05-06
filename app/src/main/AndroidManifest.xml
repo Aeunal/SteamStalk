@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.agu.steamstalk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_steam_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_steam_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <receiver android:name=".WifiReceiver" android:exported="true" >
+            <intent-filter android:priority="100">
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".GameActivity"
+            android:label="@string/title_activity_game"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Search"
+            android:label="@string/app_name">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar" -->
+            <intent-filter>
+                <!--
+                <action android:name="android.intent.action.SEARCH" />
+                -->
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".Search">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project.agu.steamstalk.Search" />
+        </activity>
+        <activity android:name=".UserActivity" />
+
+        <service
+            android:name=".Sync.SteamStalkIntentService"
+            android:exported="false">
+        </service>
+
+        <service
+            android:name=".Sync.SteamStalkJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+        </service>
+
+        <provider
+            android:name=".Data.SteamProvider"
+            android:authorities="com.project.agu.steamstalk"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".Services.FetchService"
+            android:exported="false"></service>
+
+        <receiver
+            android:name=".Services.FetchInfoReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.project.agu.steamstalk.FETCH_INTENT" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+        <receiver android:name=".WifiReceiver"
+            android:enabled="true"
+            android:label="ConnectivityActionReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        -->
+
+    </application>
+
+</manifest>

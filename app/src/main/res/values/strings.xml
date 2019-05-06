@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">SteamStalk</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="large_text"></string>
+    <string name="title_activity_delete">delete</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_search_results">SearchResults</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Profile</string>
+
+    <string name="pref_title_social_recommendations">Enable game recommendations</string>
+
+    <string name="pref_title_free_show">Show free games on user\'s list</string>
+    <string name="pref_description_social_recommendations">Recommendations based on your games
+    </string>
+
+    <string name="pref_title_news_count">How many news will be shown</string>
+    <string name="pref_default_news_count">-1</string>
+
+    <string name="pref_title_owned_game_count">How many recently games will be shown</string>
+    <string name="pref_default_owned_game_count">0</string>
+
+    <string name="pref_title_display_name">Change Profile</string>
+    <string name="pref_default_display_name">76561198312476051</string>
+
+    <string name="pref_title_add_friends_to_messages">Notify when friend is online</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>Only Wi-Fi</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array	name="pref_language_options">
+        <item>EN</item>
+        <item>TR</item>
+    </string-array>
+    <string-array 	name="pref_language_values">
+        <item>en</item>
+        <item>tr</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <!--
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+    -->
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">Notify when friend logged in</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="sync_language_setting">Sync And Langugage</string>
+    <string name="language_setting">Choose Langugage</string>
+    <string name="games" translatable="false">Games</string>
+    <string name="recently_played" translatable="false">Recently Played</string>
+    <string name="developer" translatable="false">Developer:</string>
+    <string name="publisher" translatable="false">Publisher:</string>
+    <string name="genre" translatable="false">Genre:</string>
+    <string name="price" translatable="false">Price:</string>
+    <string name="history" >History</string>
+    <string name="favourites" >Favourites</string>
+    <string name="user" translatable="false">USER</string>
+    <string name="game" translatable="false">GAME</string>
+    <string name="tooltip">Enter your steamID</string>
+</resources>
